@@ -1,0 +1,24 @@
+<div id="map" class="vh-100 vw-100"></div>
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    const lat = {{ site.Params.map.coordsLat }}
+    const long = {{ site.Params.map.coordsLong }}
+    const zoom = {{ site.Params.map.zoom }}
+
+  console.log('lat: ' + lat)
+  // The location
+  const location = { lat: lat, lng: long };
+  // The map, centered at Location
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: zoom,
+    center: location,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: location,
+    map: map,
+  });
+  }
+</script>

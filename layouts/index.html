@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="min-vh-100" aria-role="main"
+  style="background-image: url( {{ .Params.heroImage }} ); background-size: cover;">
+  <div class="p-5">
+    <header class="homepage-header">
+      {{ with .Params.subtitle }}
+      <h3 class="subtitle">{{.}}</h3>
+      {{ end }}
+      <div class="homepage-content">
+        {{.Content}}
+      </div>
+    </header>
+    {{ if .Site.Params.enableForm }}
+    {{ partial "form.html" }}
+    {{ end }}
+  </div>
+</main>
+{{ if .Site.Params.enableMap }}
+{{ partial "map.html" }}
+{{ end }}
+{{ end }}

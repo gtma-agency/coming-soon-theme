@@ -1,0 +1,17 @@
+$primary : {{ .Site.Site.Params.style.primary }};
+$font-family-base : {{ .Site.Site.Params.style.fontFamily }};
+
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+{{ if eq .Site.Params.themeOption 1 }}
+@import "theme1"
+{{ end }}
+
+{{ if eq .Site.Params.themeOption 2 }}
+@import "theme2"
+{{ end }}
+
+{{ if eq .Site.Params.themeOption 3 }}
+@import "theme3"
+{{ end }}
