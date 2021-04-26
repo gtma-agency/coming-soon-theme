@@ -1,0 +1,25 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Coming Soon"
+theme = "landing"
+
+[seo]
+  GTMID = ""
+  metaTitle = ""
+  metaDescription = ""
+
+[params]
+  # 1 - Full-width Image, 2 - Two Column, 3 - Two image
+  themeOption = 1
+  enableForm = 1
+  enableMap = 1
+  [params.map]
+    APIKey = "AIzaSyDSB-pe0WJVZV_8Ti2lyH-1o-lOZNaiX0w"
+    coordsLat = 45.819790
+    coordsLong = -122.700560
+    zoom = 14
+  [params.style]
+    primary = "#facade"
+    secondary = "#facade"
+    fontEmbed = '<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">'
+    fontFamily = "Antonio"
