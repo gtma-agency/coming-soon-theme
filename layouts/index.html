@@ -1,19 +1,43 @@
 {{ define "main" }}
-<main class="min-vh-100" aria-role="main"
-  style="background-image: url( {{ .Params.heroImage }} ); background-size: cover;">
-  <div class="p-5">
-    <header class="homepage-header">
-      {{ with .Params.subtitle }}
-      <h3 class="subtitle">{{.}}</h3>
-      {{ end }}
-      <div class="homepage-content">
-        {{.Content}}
+{{ if not (eq .Site.Params.themeOption 3 )}}
+      <main class="" aria-role="main" style="background-image: url( {{ .Params.heroImage }} ); background-size: cover;">
+  {{ else}}
+      <main class="" aria-role="main">
+{{ end }}
+    <div class="box-content-header">
+      <div class="wrapper-content">
+        <div class="bg-custom item-content item-content__1">
+          <div class="px-3 container-fluid">
+            <div class="homepage-header">
+              <div class="homepage-content">
+                {{.Content}}
+              </div>
+              <div class="portland">
+                <img class="img-logo" src="{{ .Site.BaseURL }}/logo.png" alt="Broadstone portland">
+              </div>
+              {{ with .Params.subtitle }}
+              <h3 class="subtitle">{{.}}</h3>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        <div class="item-content item-content__2">
+          <div class="wrapper-form">
+            <p>Sign up to stay informed</p>
+            {{ if .Site.Params.enableForm }}
+            {{ partial "form.html" }}
+            {{ end }}
+          </div>
+        </div>
       </div>
-    </header>
-    {{ if .Site.Params.enableForm }}
-    {{ partial "form.html" }}
-    {{ end }}
-  </div>
+      {{ if eq .Site.Params.themeOption 3}}
+      <div class="wrapper-images">
+        <img class="img img__img-one" src="{{ .Site.BaseURL }}/image-one.png" alt="Broadstone portland">
+        <img class="img img__img-two" src="{{ .Site.BaseURL }}/image-two.png" alt="Broadstone portland">
+      </div>
+      {{ end }}
+    </div>
+
 </main>
 {{ if .Site.Params.enableMap }}
 {{ partial "map.html" }}

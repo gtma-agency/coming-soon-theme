@@ -1,17 +1,22 @@
 $primary : {{ .Site.Site.Params.style.primary }};
 $font-family-base : {{ .Site.Site.Params.style.fontFamily }};
+$body-bg: {{ .Site.Site.Params.style.bodyBg }};
+$body-color: {{ .Site.Site.Params.style.bodyColor }};
+$bg-custom: {{ .Site.Site.Params.style.bgCustom }};
 
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "reset";
+@import "global";
 
 {{ if eq .Site.Params.themeOption 1 }}
-@import "theme1"
+@import "theme1";
 {{ end }}
 
 {{ if eq .Site.Params.themeOption 2 }}
-@import "theme2"
+@import "theme2";
 {{ end }}
 
 {{ if eq .Site.Params.themeOption 3 }}
-@import "theme3"
+@import "theme3";
 {{ end }}

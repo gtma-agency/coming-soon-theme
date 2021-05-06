@@ -1,5 +1,160 @@
 main {
+
+  .box-content-header {
+    width: 100%;
+    height: 100%;
+
+    .wrapper-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      .item-content {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        &__1 {
+          display: flex;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &__2 {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          align-items: flex-end;
+
+          @media only screen and (max-width: 991px) {
+            align-items: center;
+          }
+        }
+
+        .wrapper-form {
+          width: 100%;
+          background: #0d180873;
+          padding: 4em 2em;
+          margin-bottom: 10vh;
+
+          @media only screen and (max-width: 991px) {
+            padding: 0 1rem;
+            margin-bottom: 0;
+          }
+        }
+        .homepage-content {
+
+          #coming-soon {
+            font-size: 4em;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            margin-bottom: .4em;
+
+            &:after {
+              content: "";
+              display: block;
+              position: absolute;
+              width: .6em;
+              background: $primary;
+              height: 3px;
+              left: -.7em;
+              bottom: 50%;
+            }
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              width: .6em;
+              background: $primary;
+              height: 3px;
+              right: -.71em;
+              bottom: 50%;
+            }
+
+            @media only screen and (max-width: 668px) {
+              font-size: 3em;
+            }
+
+          }
+
+          #broadstone {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 100;
+            font-size: 2em;
+          }
+
+          #portland {
+            font-size: 6em;
+            margin-top: -18px;
+          }
+        }
+
+        .portland {
+          margin-top: -18px;
+          position: relative;
+          width: max-content;
+          margin: auto;
+
+          img.img-logo {
+            width: 400px;
+
+            @media only screen and (max-width: 668px) {
+              width: 280px;
+            }
+          }
+
+        }
+        .subtitle {
+          text-transform: uppercase;
+          font-size: 2em;
+          margin-top: .5em;
+          font-weight: 300;
+
+          @media only screen and (max-width: 668px) {
+            font-size: 1.5em;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 991px) {
+        flex-direction: column;
+      }
+    }
+    .wrapper-form {
+      .form-control {
+        background: transparent;
+        color: $body-color;
+        opacity: 1;
+        border-radius: 0;
+        border: 2px solid $body-color;
+
+        &::placeholder {
+          color: $body-color;
+          font-size: 1em;
+        }
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 1em;
+      }
+
+      .cta {
+        text-align: right;
+      }
+
+    }
+  }
+  .bg-custom {
+    background-color: $bg-custom;
+  }
   p {
-    color: red;
+    color: $body-color;
+    margin: 0;
   }
 }

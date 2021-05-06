@@ -1,0 +1,38 @@
+//breakpoint
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  @media only screen and (max-width: 991px) {
+
+  }
+
+  .box-content-header {
+
+    .wrapper-form {
+      .form-control {
+        background: transparent;
+        color: $body-color;
+        opacity: 1;
+        border-radius: 0;
+        border: 2px solid $body-color;
+
+        &::placeholder {
+          color: $body-color;
+        }
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 1em;
+      }
+
+      .cta {
+        text-align: right;
+      }
+    }
+
+  }
+}

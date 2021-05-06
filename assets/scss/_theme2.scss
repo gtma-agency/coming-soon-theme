@@ -1,5 +1,156 @@
 main {
+
+  .box-content-header {
+    width: 100%;
+
+    .wrapper-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      .item-content {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        &__1 {
+          display: flex;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &__2 {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          align-items: flex-end;
+
+          @media only screen and (max-width: 991px) {
+            align-items: center;
+          }
+        }
+
+        .wrapper-form {
+          width: 45%;
+          padding: 0;
+          margin-top: 2em;
+
+          @media only screen and (max-width: 991px) {
+            width: 100%;
+            padding: 0 1rem;
+            margin-bottom: 0;
+          }
+        }
+        .homepage-content {
+
+          #coming-soon {
+            font-size: 3.6em;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 100;
+
+            @media only screen and (max-width: 668px) {
+              font-size: 3em;
+            }
+          }
+
+          #broadstone {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 100;
+            font-size: 2em;
+          }
+
+          #portland {
+            font-size: 6em;
+            margin-top: -18px;
+            position: relative;
+            width: max-content;
+            margin: auto;
+
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 100%;
+              background: $primary;
+              height: 3px;
+              margin: auto;
+              bottom: -9px;
+            }
+          }
+        }
+
+        .portland {
+          margin-top: -18px;
+          position: relative;
+          width: max-content;
+          margin: auto;
+
+          img.img-logo {
+            width: 550px;
+
+            @media only screen and (max-width: 668px) {
+              width: 280px;
+            }
+          }
+
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            background: $primary;
+            height: 3px;
+            margin: auto;
+            bottom: -9px;
+          }
+        }
+        .subtitle {
+          text-transform: uppercase;
+          font-size: 2em;
+          margin-top: 1em;
+          font-weight: 300;
+
+          @media only screen and (max-width: 668px) {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+    .wrapper-form {
+      .form-control {
+        background: transparent;
+        color: $body-color;
+        opacity: 1;
+        border-radius: 0;
+        border: 2px solid $body-color;
+
+        &::placeholder {
+          color: $body-color;
+        }
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 1em;
+      }
+
+      .cta {
+        text-align: right;
+      }
+    }
+  }
+  .bg-custom {
+    background-color: transparent;
+  }
   p {
-    color: blue;
+    color: $body-color;
+    margin: 0;
   }
 }

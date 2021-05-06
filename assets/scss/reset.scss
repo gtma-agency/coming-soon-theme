@@ -1,0 +1,23 @@
+html {
+  font-size: 16px;
+
+  @media only screen and (max-width: 668px) {
+    font-size: 14px;
+  }
+
+}
+
+a,abbr,acronym,address,article,aside,audio,big,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,ul,var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: middle
+}
+
+.btn {
+  border-radius: 0;
+  color: $body-color;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}

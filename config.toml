@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Coming Soon"
-theme = "landing"
+#theme = "landing"
 
 [seo]
   GTMID = ""
@@ -19,7 +19,10 @@ theme = "landing"
     coordsLong = -122.700560
     zoom = 14
   [params.style]
-    primary = "#facade"
+    primary = "#B79F39"
     secondary = "#facade"
-    fontEmbed = '<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">'
-    fontFamily = "Antonio"
+    bodyBg = "#2b2e34"
+    bodyColor = "#ffffff"
+    bgCustom = "#294954"
+    fontEmbed = '<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">'
+    fontFamily = "'Roboto Condensed', sans-serif"
