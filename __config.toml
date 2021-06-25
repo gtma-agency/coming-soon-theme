@@ -14,7 +14,7 @@ title = "Coming Soon"
   enableForm = 1
   enableMap = 1
   [params.map]
-    APIKey = "AIzaSyDSB-pe0WJVZV_8Ti2lyH-1o-lOZNaiX0w"
+    APIKey = ""
     coordsLat = 45.819790
     coordsLong = -122.700560
     zoom = 14
