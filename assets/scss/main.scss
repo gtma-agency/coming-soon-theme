@@ -1,8 +1,8 @@
-$primary : {{ .Site.Site.Params.style.primary }};
-$font-family-base : {{ .Site.Site.Params.style.fontFamily }};
-$body-bg: {{ .Site.Site.Params.style.bodyBg }};
-$body-color: {{ .Site.Site.Params.style.bodyColor }};
-$bg-custom: {{ .Site.Site.Params.style.bgCustom }};
+$primary : {{ .Site.Params.style.primary }};
+$font-family-base : {{ .Site.Params.style.fontFamily }};
+$body-bg: {{ .Site.Params.style.bodyBg }};
+$body-color: {{ .Site.Params.style.bodyColor }};
+$bg-custom: {{ .Site.Params.style.bgCustom }};
 
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
