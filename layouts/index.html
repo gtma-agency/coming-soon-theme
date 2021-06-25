@@ -12,8 +12,8 @@
               <div class="homepage-content">
                 {{.Content}}
               </div>
-              <div class="portland">
-                <img class="img-logo" src="{{ .Site.BaseURL }}/logo.png" alt="Broadstone portland">
+              <div class="logo">
+                <img class="img-logo" src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
               </div>
               {{ with .Params.subtitle }}
               <h3 class="subtitle">{{.}}</h3>
@@ -23,7 +23,6 @@
         </div>
         <div class="item-content item-content__2">
           <div class="wrapper-form">
-            <p>Sign up to stay informed</p>
             {{ if .Site.Params.enableForm }}
             {{ partial "form.html" }}
             {{ end }}
@@ -32,8 +31,8 @@
       </div>
       {{ if eq .Site.Params.themeOption 3}}
       <div class="wrapper-images">
-        <img class="img img__img-one" src="{{ .Site.BaseURL }}/image-one.png" alt="Broadstone portland">
-        <img class="img img__img-two" src="{{ .Site.BaseURL }}/image-two.png" alt="Broadstone portland">
+        <img class="img img__img-one" src="{{ .Site.BaseURL }}/image-one.png" alt="{{ .Site.Title }}">
+        <img class="img img__img-two" src="{{ .Site.BaseURL }}/image-two.png" alt="{{ .Site.Title }}">
       </div>
       {{ end }}
     </div>

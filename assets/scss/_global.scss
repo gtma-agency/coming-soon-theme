@@ -12,6 +12,14 @@ main {
   .box-content-header {
 
     .wrapper-form {
+      h2 {
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: 300;
+        line-height: 1.4;
+        margin-bottom: 30px;
+      }
+
       .form-control {
         background: transparent;
         color: $body-color;
