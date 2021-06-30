@@ -52,7 +52,7 @@ main {
             text-transform: uppercase;
             position: relative;
             display: inline-block;
-            margin-bottom: .4em;
+            margin: .75em 0;
 
             &:after {
               content: "";
@@ -80,18 +80,6 @@ main {
             }
 
           }
-
-          #broadstone {
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-weight: 100;
-            font-size: 2em;
-          }
-
-          #portland {
-            font-size: 6em;
-            margin-top: -18px;
-          }
         }
 
         .logo {
@@ -112,7 +100,7 @@ main {
         .subtitle {
           text-transform: uppercase;
           font-size: 2em;
-          margin: 1.5em 0;
+          margin: 0.75em 0;
           font-weight: 300;
 
           @media only screen and (max-width: 668px) {
