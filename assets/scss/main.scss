@@ -1,4 +1,5 @@
 $primary : {{ .Site.Params.style.primary }};
+$secondary : {{ .Site.Params.style.secondary }};
 $font-family-base : {{ .Site.Params.style.fontFamily }};
 $body-bg: {{ .Site.Params.style.bodyBg }};
 $body-color: {{ .Site.Params.style.bodyColor }};
