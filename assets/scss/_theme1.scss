@@ -47,7 +47,7 @@ main {
         }
         .homepage-content {
 
-          #coming-soon {
+          h1 {
             font-size: 4em;
             text-transform: uppercase;
             position: relative;
@@ -61,7 +61,7 @@ main {
               width: .6em;
               background: $primary;
               height: 3px;
-              left: -.7em;
+              left: -0.75em;
               bottom: 50%;
             }
             &:before {
@@ -71,7 +71,7 @@ main {
               width: .6em;
               background: $primary;
               height: 3px;
-              right: -.71em;
+              right: -0.75em;
               bottom: 50%;
             }
 
@@ -112,7 +112,7 @@ main {
         .subtitle {
           text-transform: uppercase;
           font-size: 2em;
-          margin-top: .5em;
+          margin: 1.5em 0;
           font-weight: 300;
 
           @media only screen and (max-width: 668px) {
@@ -128,13 +128,13 @@ main {
     .wrapper-form {
       .form-control {
         background: transparent;
-        color: $body-color;
+        color: $light;
         opacity: 1;
         border-radius: 0;
-        border: 2px solid $body-color;
+        border: 2px solid $light;
 
         &::placeholder {
-          color: $body-color;
+          color: $light;
           font-size: 1em;
         }
       }

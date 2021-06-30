@@ -9,15 +9,15 @@
         <div class="bg-custom item-content item-content__1">
           <div class="px-3 container-fluid">
             <div class="homepage-header">
-              <div class="homepage-content">
-                {{.Content}}
-              </div>
               <div class="logo">
                 <img class="img-logo" src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
               </div>
               {{ with .Params.subtitle }}
               <h3 class="subtitle">{{.}}</h3>
               {{ end }}
+              <div class="homepage-content">
+                <h1>{{.Title}}</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -36,8 +36,10 @@
       </div>
       {{ end }}
     </div>
-
 </main>
+{{ with .Params.address }}
+<div class="bg-primary text-center py-3 text-white">{{ . }}</div>
+{{ end }}
 {{ if .Site.Params.enableMap }}
 {{ partial "map.html" }}
 {{ end }}

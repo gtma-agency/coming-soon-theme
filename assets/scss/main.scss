@@ -3,6 +3,7 @@ $font-family-base : {{ .Site.Params.style.fontFamily }};
 $body-bg: {{ .Site.Params.style.bodyBg }};
 $body-color: {{ .Site.Params.style.bodyColor }};
 $bg-custom: {{ .Site.Params.style.bgCustom }};
+$light: {{ .Site.Params.style.light }};
 
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
