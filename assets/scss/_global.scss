@@ -1,9 +1,10 @@
 //breakpoint
 main {
   min-height: 90vh;
-  display: flex;
+  // display: flex;
   align-items: center;
-  height: 90vh;
+  // height: 90vh;
+  display: grid;
 
   @media only screen and (max-width: 991px) {
     height: auto;

@@ -89,7 +89,9 @@ main {
           margin: auto;
 
           img.img-logo {
-            width: 500px;
+            width: 100%;
+            max-width: 350px;
+            // width: 500px;
 
             @media only screen and (max-width: 668px) {
               width: 280px;
