@@ -6,7 +6,8 @@ main {
   height: 90vh;
 
   @media only screen and (max-width: 991px) {
-
+    height: auto;
+    align-items: flex-start;
   }
 
   .box-content-header {
