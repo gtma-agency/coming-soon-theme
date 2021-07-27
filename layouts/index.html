@@ -25,7 +25,7 @@
         <div class="item-content item-content__2">
           <div class="wrapper-form">
             {{ if .Site.Params.enableForm }}
-            {{ partial "form.html" }}
+            {{ partial "form.html" (dict "context" .Params) }}
             {{ end }}
           </div>
         </div>
