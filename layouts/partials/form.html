@@ -1,5 +1,6 @@
 <h2 class="text-light">Sign up to<br>stay informed</h2>
 <form id="contact" name="contact" data-netlify="true" action="thank-you" method="POST">
+  <input type="hidden" id="subject" name="subject" value="{{ .context.formsubject }}">
   <div class="row mb-3">
     <div class="col">
       <input required="true" type="text" name="Name" class="form-control" placeholder="Name" aria-label="Name" aria-required="true">

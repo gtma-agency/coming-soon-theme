@@ -41,7 +41,7 @@ main {
           margin-bottom: 10vh;
 
           @media only screen and (max-width: 991px) {
-            padding: 0 1rem;
+            padding: 1rem 1rem;
             margin-bottom: 0;
           }
         }
@@ -89,7 +89,9 @@ main {
           margin: auto;
 
           img.img-logo {
-            width: 500px;
+            width: 100%;
+            max-width: 400px;
+            // width: 500px;
 
             @media only screen and (max-width: 668px) {
               width: 280px;
