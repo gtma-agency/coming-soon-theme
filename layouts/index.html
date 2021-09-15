@@ -14,7 +14,7 @@
               </div>
 
               <div class="homepage-content">
-                <h1>{{.Title}}</h1>
+                <h1>{{ safeHTML .Title}}</h1>
               </div>
               {{ with .Params.subtitle }}
               <h3 class="subtitle">{{.}}</h3>
