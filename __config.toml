@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Coming Soon"
-#theme = "coming-soon"
+theme = "coming-soon"
 
 [seo]
   GTMID = ""
