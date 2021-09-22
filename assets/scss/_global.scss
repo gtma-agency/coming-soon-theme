@@ -1,4 +1,7 @@
 //breakpoint
+#content {
+  position: relative;
+}
 main {
   min-height: 90vh;
   // display: flex;
@@ -44,5 +47,19 @@ main {
       }
     }
 
+  }
+}
+
+.powered-by {
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 30px;
+  background-color: $bg-custom;
+  z-index: 100;
+  a {
+    color: #fff;
+    text-decoration: underline;
   }
 }
